@@ -169,10 +169,11 @@ function esPositivo(numero) {
   if(numero === 0) {
     return false
   }
-  if (numero > 0) {
+  else if (numero > 0) {
     return "es positivo";
-  } else {  
-    return "es negativo"
+  }
+   else {  
+    return "es negativo";
   }
 }
 
