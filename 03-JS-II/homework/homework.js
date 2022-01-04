@@ -16,7 +16,7 @@ function mayoriaDeEdad(edad) {
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
-    return "Allowed"
+    return "Allowed";
   } 
    else {
     return "Not allowed";
@@ -36,7 +36,7 @@ function conection(status) {
     return "Away";
   }
     else {
-      return "Offline"
+      return "Offline";
   }
 }
 
@@ -58,8 +58,8 @@ function saludo(idioma) {
   }  
   else {
     return "Hola!"
+  }
 }
-
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -94,6 +94,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  return  (numero < 50) && (numero > 20)
 }
 
 function esEntero(numero) {
@@ -104,6 +105,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  return numero % 1 === 0;
 }
 
 function fizzBuzz(numero) {
@@ -111,6 +113,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -176,4 +179,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-};
+}
