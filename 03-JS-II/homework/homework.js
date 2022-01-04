@@ -12,11 +12,11 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if(edad >= 18) {
+  if (edad >= 18) {
     return "Allowed"
   } 
    else {
-    return " Not allowed";
+    return "Not allowed";
   }
 }
   
@@ -26,11 +26,14 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if(edad >= 18) {
-    return "Allowed";
+  if (status == 1){
+    return "Online";
+  } 
+  if (status == 2){
+    return "Away";
   }
-  else {
-    return "Not allowed";
+    else {
+      return "Offline"
   }
 }
 
